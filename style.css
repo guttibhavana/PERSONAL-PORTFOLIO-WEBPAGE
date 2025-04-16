@@ -1,0 +1,149 @@
+/* Global Style Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page Background */
+body {
+    background-color: #F1F5F9;
+    color: #0F172A;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #0F172A;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 2.5rem;
+}
+
+/* Navbar */
+#nav {
+    background-color: #1E293B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#nav .logo {
+    color: #F8FAFC;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #F8FAFC;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #38BDF8;
+    color: #1E293B;
+}
+
+/* Section Styles */
+.aboutt, .myprojectt, .myskillss, .contactt {
+    background-color: #FFFFFF;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* About section special layout */
+.aboutt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* About Text */
+.matter {
+    flex: 1;
+}
+
+/* Profile Image */
+img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Footer */
+#foot {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9rem;
+    color: #475569;
+    background-color: #E2E8F0;
+    margin-top: 50px;
+}
+
+/*media screen which is used to differntiate webpage in different screen sizes*/
+@media screen and (min-width:700px) and (max-width:1000px) {
+    #nav{
+        background-color:lightblue;
+        display:flex;
+        flex-direction: column;
+        height:130px;
+    }
+    a{
+        margin-top:10px;
+    }
+    .aboutt{
+        display: flex;
+        flex-direction: column;
+        height:700px;
+    }
+    .matter{
+        margin-top:15px;
+    }
+   }
+   @media screen and (max-width:699px){
+    #nav{
+        background-color: lightblue;
+        display:flex;
+        flex-direction:column;
+        height:150px;
+    }
+    a{
+        margin-top:10px;
+    }
+    .aboutt{
+        display:flex;
+        flex-direction: column;
+        height:600px;
+        align-items: center;
+        height:700px;
+    }
+    .matter{
+        margin-top:15px;
+    }
+   }
